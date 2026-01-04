@@ -9,6 +9,10 @@
     </head>
     <body>
         <main>
+            <audio id="bgMusic" loop>
+                <source src="kepek/Moonburn Crush.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
             <header>
                 <button id="darkModeToggle">
                     <img id="modeIcon" src="kepek/beeeee.png" class="pic" alt="Bee" width="40">
@@ -74,6 +78,14 @@
                 <p>Gubek Veronika™</p>
             </footer>
         </main>
+        <script>
+            const music = document.getElementById('bgMusic');
+            music.volume = 0.03;
+            document.addEventListener('click', function playMusicOnce() {
+                music.play().catch(err => console.log("Playback blocked:", err));
+                document.removeEventListener('click', playMusicOnce);
+            });
+        </script>
         <script>
             document.addEventListener('DOMContentLoaded', function () {
             const toggle = document.getElementById('darkModeToggle');
