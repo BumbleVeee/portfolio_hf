@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <title>Gubek Veronika</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="description" content="Gubek Vera önéletrajz">
+        <meta name="keywords" content="Gubek, Veronika, önéletrajz">
+        <link rel="stylesheet" href="stilus.css">
+    </head>
+    <body>
+        <main>
+            <header>
+                <button id="darkModeToggle">
+                    <img id="modeIcon" src="kepek/beeeee.png" class="pic" alt="Bee" width="40">
+                </button>
+                <h1>Gubek Veronika</h1>
+                <ul>
+                    <li><a href="index-en.html" class="rolam">About me</a></li>
+                    <li><a href="munkaim.html" class="munkak">Works</a></li>
+                    <li><a href="index.html" class="hu">&#x1f1ed;&#x1f1fa;</a></li>
+                    <li><a href="index-en.html" class="en">&#x1f1ec;&#x1f1e7;</a></li>
+                </ul>
+            </header>
+            <nav>
+                <img src="kepek/fenykep-comp.jpg" class="star">
+                <div class="text">
+                    <h2>About me</h2>
+                    <p>
+                        I like working in teams and I can also work
+                        on problems myself. My tolerance for monotony
+                        is really high, but at the same time a little
+                        change can be exciting. I’m really passionet
+                        about my job</p>
+                </div>
+            </nav>
+            <article>
+                <h2>Language knowledge and skills</h2>
+                <h3>Languages</h3>
+                <ul>
+                    <li>Hungarian - on a native level</li>
+                    <li>English - Conversational level</li>
+                </ul>
+                <iframe width="500" height="300" 
+                    src="https://youtu.be/QCfTDTmgaJg" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+                <h5>His Dark Materials intro</h5>
+                <h3>Hobbies</h3>
+                <ul>
+                    <li>Origami</li>
+                    <li>Photography - with a professional camera</li>
+                    <li>Painting at an amateur level</li>
+                    <li>Animation and films study - animation, shortfilm, series, film</li>
+                    <li>Cultural interest - music, film, history, szokások
+                        customs (pl. mexican, british, american, japanese,
+                        korean, bengal)</li>
+                    <li>Studying game development Participation in Beta tests and entry level game development
+                    </li>
+                </ul>
+            </article>
+            <aside>
+                <img src="kepek/[CITYPNG.COM]FREE United Kingdom England Uk Flag Icon PNG - 5000x5000.png" class="zaszlo">
+                <h3>Education</h3>
+                <ul>
+                    <li>Animation and Film maker - 2020</li>
+                    <li>Graphic Design - 2019</li>
+                    <li>Artistic Highschool - 2015</li>
+                </ul>
+                <img src="kepek/pngegg.png" class="roka">
+            </aside>
+            <footer>
+                <p>Gubek Veronika™</p>
+            </footer>
+        </main>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+            const toggle = document.getElementById('darkModeToggle');
+            const icon = document.getElementById('modeIcon');
+
+            toggle.addEventListener('click', function () {
+                document.body.classList.toggle('dark');
+
+                if (document.body.classList.contains('dark')) {
+                    icon.src = "kepek/invertbeeeee.png";   
+                } else {
+                    icon.src = "kepek/beeeee.png";
+                }
+                });
+            });
+        </script>
+    </body>
+</html>

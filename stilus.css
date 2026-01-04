@@ -1,0 +1,287 @@
+*{box-sizing: border-box;}
+
+:root {
+    --page-bg: rgb(227, 241, 227);
+    --main-bg: white;
+    --header-bg: rgb(197, 231, 197);
+
+    --text-color: black;
+    --accent-color: green;
+    --muted-color: gray;
+}
+
+body{
+    background-color: var(--page-bg);
+    color: var(--text-color);
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "h h"
+    "na na"
+    "ar as"
+    "f f";
+    width: 70%;
+    margin: auto;
+    margin-top: -10px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: var(--main-bg);
+}
+
+img{
+    width: 100%;
+}
+
+#darkModeToggle img {
+    display: block;
+    border: none;
+    width: 40px;
+    height: auto;
+}
+
+#darkModeToggle{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.rolam{
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+.rolam:visited{
+    color: var(--muted-color);
+    text-decoration: overline;
+}
+
+.rolam:hover{
+    color: var(--text-color);
+}
+
+.munkak{
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+.munkak:visited{
+    color: var(--muted-color);
+    text-decoration: overline;
+}
+
+.munkak:hover{
+    color: var(--text-color);
+}
+
+.hu{
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+.hu:visited{
+    color: var(--muted-color);
+    text-decoration: overline;
+}
+
+.hu:hover{
+    color: var(--text-color);
+}
+
+.en{
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+.en:visited{
+    color: var(--muted-color);
+    text-decoration: overline;
+}
+
+.en:hover{
+    color: var(--text-color);
+}
+
+.pic{
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+.pic:visited{
+    color: var(--muted-color);
+    text-decoration: overline;
+}
+
+.pic:hover{
+    color: var(--text-color);
+}
+
+header{
+    grid-area: h;
+    text-align: center;
+    display: inline;
+    padding: 15px;
+    background-color: var(--header-bg);
+}
+
+header h1{
+    font-size: 20px;
+    color: var(--accent-color);
+}
+
+header ul li{
+    display: inline;
+    margin: 0 10px;
+}
+
+header ul, header h1{
+    display: inline;
+    margin: 0 10px;
+}
+
+nav{
+    grid-area: na;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+nav h2{
+    color: var(--accent-color);
+}
+
+.text{
+    text-align: left;
+    overflow: hidden;
+    margin-left: 21%;
+    margin-top: 9%;
+}
+
+article{
+    grid-area: ar;
+    text-align: left;
+    padding: 10px;
+    max-width: 700px;
+    margin-left: 10px;
+}
+
+article h3{
+    margin-top: 25px;
+    color: var(--accent-color);
+}
+
+article h2{
+    margin-bottom: 20px;
+    color: var(--accent-color);
+}
+
+aside{
+    grid-area: as;
+    padding: 10px;
+    text-align: right;
+    margin-right: 20px;
+}
+
+aside h3{
+    margin-top: 100px;
+    color: var(--accent-color);
+}
+
+.zaszlo{
+    width: 200px;
+    margin-top: 10px;
+}
+
+.roka{
+    width: 400px;
+    margin-top: 100px;
+}
+
+footer{
+    grid-area: f;
+    text-align: center;
+    margin-bottom: -30px;
+    background-color: var(--header-bg);
+    color: var(--accent-color);
+}
+
+.star {
+    float: left;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: 59% 50%;
+    clip-path: polygon(
+    50% 0%,
+    65% 27%,
+    98% 35%,
+    75% 57%,
+    79% 91%,
+    50% 78%,
+    21% 91%,
+    25% 59%,
+    2% 35%,
+    35% 27%);
+    margin-top: 50px;
+}
+
+iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    margin-bottom: -20px;
+    margin-top: 10px;
+}
+
+body.dark {
+    --page-bg: #121212;
+    --main-bg: #1e1e1e;
+    --header-bg: #2a2a2a;
+
+    --text-color: #f2f2f2;
+    --accent-color: #90ee90;
+    --muted-color: #aaaaaa;
+}
+
+@media screen and (max-width: 650px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "h"
+            "na"
+            "ar"
+            "as"
+            "f";
+        width: 90%;
+        margin: auto;
+        font-size: calc(8px + 2vw);
+    }
+
+    nav .star{
+        float: none;
+        display: block;
+        margin: 20px auto;
+    }
+
+    .text{
+        margin: 0;
+        overflow: visible;
+        text-align: center;
+    }
+
+    article, aside {
+        margin: 0;
+        text-align: center;
+    }
+
+    iframe {
+        width: 100%;
+    }
+}

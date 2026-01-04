@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <title>Gubek Veronika</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="description" content="Gubek Vera önéletrajz">
+        <meta name="keywords" content="Gubek, Veronika, önéletrajz">
+        <link rel="stylesheet" href="stilus.css">
+    </head>
+    <body>
+        <main>
+            <header>
+                <button id="darkModeToggle">
+                    <img id="modeIcon" src="kepek/beeeee.png" class="pic" alt="Bee" width="40">
+                </button>
+                <h1>Gubek Veronika</h1>
+                <ul>
+                    <li><a href="index.html" class="rolam">Rólam</a></li>
+                    <li><a href="munkaim.html" class="munkak">Munkáim</a></li>
+                    <li><a href="index.html" class="hu">&#x1f1ed;&#x1f1fa;</a></li>
+                    <li><a href="index-en.html" class="en">&#x1f1ec;&#x1f1e7;</a></li>
+                </ul>
+            </header>
+            <nav>
+                <img src="kepek/fenykep-comp.jpg" class="star">
+                <div class="text">
+                    <h2>Rólam</h2>
+                    <p>
+                        Szeretek csapatban dolgozni, de önálló munkáknál is megállom a helyem.
+                        A monotonitás tűrésem igen magas, ugyan akkor néha nem árt a változatosság.
+                        Elkötelezett vagyok a munkám iránt.</p>
+                </div>
+            </nav>
+            <article>
+                <h2>Nyelvtudás és készségek</h2>
+                <h3>Nyelvek</h3>
+                <ul>
+                    <li>Magyar (anyanyelvi szinten)</li>
+                    <li>Angol (társalgási szinten, mindennapos használattal)</li>
+                </ul>
+                <iframe width="500" height="300" 
+                    src="https://youtu.be/QCfTDTmgaJg" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+                <h5>His Dark Materials intro</h5>
+                <h3>Hobbik</h3>
+                <ul>
+                    <li>Origami</li>
+                    <li>Fotózás - profi géppel</li>
+                    <li>Festés amatőr szinten</li>
+                    <li>Animációs és filmek tanulmányozása - animáció, rövidfilm, sorozat, film</li>
+                    <li>Kultúrális érdeklődés - zene, film, történelem, szokások
+                        (pl. britt, japán, koreai, amerikai, mexikói, bengáli)</li>
+                    <li>Jatékfejlesztés tanulmányozása - bétatesztelőként való részvétel,
+                        illetve kezdő szintű játéktervezés tanulása
+                    </li>
+                </ul>
+            </article>
+            <aside>
+                <img src="kepek/[CITYPNG.COM]FREE United Kingdom England Uk Flag Icon PNG - 5000x5000.png" class="zaszlo">
+                <h3>Tanulmányaim</h3>
+                <ul>
+                    <li>Mozgókép és animáció készítő - 2020</li>
+                    <li>Grafikus - 2019</li>
+                    <li>Művészeti Gimnázium - 2015</li>
+                </ul>
+                <img src="kepek/pngegg.png" class="roka">
+            </aside>
+            <footer>
+                <p>Gubek Veronika™</p>
+            </footer>
+        </main>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+            const toggle = document.getElementById('darkModeToggle');
+            const icon = document.getElementById('modeIcon');
+
+            toggle.addEventListener('click', function () {
+                document.body.classList.toggle('dark');
+
+                if (document.body.classList.contains('dark')) {
+                    icon.src = "kepek/invertbeeeee.png";   
+                } else {
+                    icon.src = "kepek/beeeee.png";
+                }
+                });
+            });
+        </script>
+    </body>
+</html>
