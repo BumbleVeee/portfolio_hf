@@ -29,6 +29,22 @@ body{
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
+    align-items: stretch;
+}
+
+.munkaim_oldal .portfolio iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border-radius: 14px;
+    background-color: var(--main-bg);
+}
+
+.portfolio-item img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 14px;
 }
 
 .munkaim_oldal .work {
@@ -255,11 +271,9 @@ footer{
 }
 
 iframe {
-    width: 100%;
-    max-width: 560px;
-    height: 315px;
-    margin-bottom: -20px;
-    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 body.dark {
